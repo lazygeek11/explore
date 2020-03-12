@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Vegan Capricciosa",
+        "ingredients": [
+            "tomato sauce",
+            "Vegan mozzarella",
+            "mushrooms",
+            "Vegan ham",
+            "olives"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Vegan Quattro Formaggi",
+        "ingredients": [
+            "tomato sauce",
+            "mozzarella",
+            "Vegan parmesan cheese",
+            "Vegan blue cheese", 
+            "Vegan goat cheese"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Vegan Napoletana",
+        "ingredients": [
+            "tomato sauce",
+            "olives",
+            "capers"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Vegan Margherita",
+        "ingredients": [
+            "tomato sauce",
+            "vegan mozzarella"
+        ]
+    }
+]
