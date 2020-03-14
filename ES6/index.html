@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Web app lifecycle</title>
-        <style>
-            #first {color: green;}
-            #second {color: red;}
-        </style>
 
-    </head>
-    <body>
-        <ul id="first"></ul>
+<head>
+    <title>Web app lifecycle</title>
+    <style>
+        #first {
+            color: green;
+        }
+
+        #second {
+            color: red;
+        }
+
+        #log {
+            background-color: blue;
+            border: 1px solid;
+            color: aliceblue;
+            padding: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="log"></div>
+    <ul id="first"></ul>
+
+    <script>
+        var first = document.getElementById("first");
         
-        <script>
-            function addMessage(element, message) {
-                var messageElement = document.createElement("li");
-                messageElement.textContent = message;
-                element.appendChild(messageElement);
-                //report("Adding messages : " + message);
-                console.log("Adding messages : " + message);
-            }
+    </script>
 
-            var first = document.getElementById("first");
-            addMessage(first, "Page loading!");
-        </script>
+    <ul id="second"></ul>
 
-        <ul id="second"></ul>
+    <script>
+        var second = document.getElementById("second");
 
-        <script>
-            var second = document.getElementById("second");
-            document.body.addEventListener("mousemove", function(){
-                
-                addMessage(second, "Event: mousemoved");
-            });
+        document.body.addEventListener("click", function () {
+            addMessage(second, "Event: click");
+        });
+       
+    </script>
+</body>
 
-            document.body.addEventListener("click", function() {
-                addMessage(second, "Event: click");
-            });
-        </script>
-    </body>
+<footer>
+    <script src="util.js"></script>
+    <script src="./func.js"></script>
+</footer>
+
 </html>
