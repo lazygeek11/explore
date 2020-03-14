@@ -1,10 +1,12 @@
+const orders = require('./orders')
+
 function createOrder(order) {
 
-    if(!order || !order.pizzaId || !order.address) {
+    if(!order || !order.pizza || !order.address) {
         throw new Error("Invalid Order.")
     }
 
-    return {};
+    return orders(order)
 
 }
 
