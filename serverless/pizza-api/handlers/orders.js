@@ -1,4 +1,5 @@
-const AWS = require('aws-sdk')
+const AWSXray = require('aws-xray-sdk-core')
+const AWS = AWSXray.captureAWS(require('aws-sdk'))
 const ddbClient = new AWS.DynamoDB.DocumentClient()
 const rp = require('minimal-request-promise')
 
